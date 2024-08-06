@@ -8,7 +8,7 @@ const CategoriesPage = () => {
 
   useEffect(() => {
     axios
-      .get("https://3.129.216.238:9090/api/v1/promo/getAllCategory")
+      .get("http://3.129.216.238:9090/api/v1/promo/getAllCategory")
       .then(({ data }) => setCategories(data));
   }, []);
 
