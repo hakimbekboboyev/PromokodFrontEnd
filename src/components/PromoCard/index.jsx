@@ -17,8 +17,8 @@ const PromoCard = ({ type }) => {
     axios
       .get(
         type == "all"
-          ? `https://3.129.216.238:9090/api/v1/promo/getAllPromo`
-          : `https://3.129.216.238:9090/api/v1/promo/category/${
+          ? `http://3.129.216.238:9090/api/v1/promo/getAllPromo`
+          : `http://3.129.216.238:9090/api/v1/promo/category/${
               location.pathname.split("/")[2]
             }`
       )
