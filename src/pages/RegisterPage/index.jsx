@@ -6,7 +6,7 @@ import Breadcrumb from "../../components/Breadcrumb";
 const RegisterPage = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => axios
-      .post("http://3.129.216.238:9090/api/v1/auth/register", data)
+      .post("https://3.129.216.238:9090/api/v1/auth/register", data)
       .then(({ data }) => console.log(data));
 
   return (
