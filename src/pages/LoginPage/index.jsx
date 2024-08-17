@@ -6,7 +6,7 @@ import Breadcrumb from "../../components/Breadcrumb";
 const LoginPage = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => axios
-      .post("https://3.129.216.238:9090/api/v1/auth/authenticate", data)
+      .post("https://promokodapi-production.up.railway.app/api/v1/auth/authenticate", data)
       .then(({ data }) => console.log(data));
 
   return (
