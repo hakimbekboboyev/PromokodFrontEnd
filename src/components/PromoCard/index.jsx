@@ -41,7 +41,7 @@ const PromoCard = ({ type }) => {
           <div className="card promo m-2">
             <img
               src={
-                `"${item.img}"`
+                `"${i.img}"`
               }
               alt="image"
             />
