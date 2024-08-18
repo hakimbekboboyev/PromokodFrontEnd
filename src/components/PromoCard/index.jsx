@@ -40,9 +40,7 @@ const PromoCard = ({ type }) => {
         {promo.map((item, i) => (
           <div className="card promo m-2">
             <img
-              src={
-                "https://firebasestorage.googleapis.com/v0/b/promokodapi.appspot.com/o/yandex.jpg?alt=media&token=2fdc98fd-3104-49aa-981e-b3b1d5e96bad"
-              }
+              src={item.img}
               alt="image"
             />
             <div className="card-body">
