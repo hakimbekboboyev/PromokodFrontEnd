@@ -13,6 +13,8 @@ const PromoCard = ({ type }) => {
   const [promo, setPromo] = useState([]);
   const location = useLocation();
 
+  console.log(promo);
+
   useEffect(() => {
     axios
       .get(
@@ -39,12 +41,7 @@ const PromoCard = ({ type }) => {
       <div className="col-12  mb-4 p-0 d-flex" style={{ flexWrap: "wrap" }}>
         {promo.map((item, i) => (
           <div className="card promo m-2">
-            <img
-              src={
-                `"${i.img}"`
-              }
-              alt="image"
-            />
+            <img src={item.image} alt="image" />
             <div className="card-body">
               <h5
                 className="card-title"
@@ -99,8 +96,10 @@ const PromoCard = ({ type }) => {
           </div>
 
           <p>
-            Mahsulotlarni sotib olishda maxsus promokoddan foydalaning va {selected.startPrice}
-            so'mlik chegirmaga ega bo'ling! Taklif faqat birinchi buyurtmaga {selected.discountPrice} 
+            Mahsulotlarni sotib olishda maxsus promokoddan foydalaning va{" "}
+            {selected.startPrice}
+            so'mlik chegirmaga ega bo'ling! Taklif faqat birinchi buyurtmaga{" "}
+            {selected.discountPrice}
             so‘mdan yuqori bo'lgan xaridlar uchun amal qiladi.
           </p>
         </div>
