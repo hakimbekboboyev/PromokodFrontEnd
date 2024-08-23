@@ -8,7 +8,7 @@ const CategoriesPage = () => {
 
   useEffect(() => {
     axios
-      .get("https://promokodapi-production.up.railway.app/api/v1/promo/getAllCategory")
+      .get("http://18.220.93.119/api/v1/promo/getAllCategory")
       .then(({ data }) => setCategories(data));
   }, []);
 

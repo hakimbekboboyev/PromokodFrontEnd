@@ -19,8 +19,8 @@ const PromoCard = ({ type }) => {
     axios
       .get(
         type == "all"
-          ? `https://promokodapi-production.up.railway.app/api/v1/promo/getAllPromo`
-          : `https://promokodapi-production.up.railway.app/api/v1/promo/category/${
+          ? `http://18.220.93.119/api/v1/promo/getAllPromo`
+          : `http://18.220.93.119/api/v1/promo/category/${
               location.pathname.split("/")[2]
             }`
       )
