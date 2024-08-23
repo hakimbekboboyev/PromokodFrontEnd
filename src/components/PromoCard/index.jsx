@@ -13,7 +13,6 @@ const PromoCard = ({ type }) => {
   const [promo, setPromo] = useState([]);
   const location = useLocation();
 
-  console.log(data);
 
   useEffect(() => {
     axios
@@ -41,7 +40,7 @@ const PromoCard = ({ type }) => {
       <h2 className="mb-4">{categoryName}</h2>
       <div className="col-12  mb-4 p-0 d-flex" style={{ flexWrap: "wrap" }}>
         {promo.map((item, i) => (
-          <div className="card promo m-2">
+          <div className="card promo m-2" key={i}>
             <img src={item.image} alt="image" />
             <div className="card-body">
               <h5
