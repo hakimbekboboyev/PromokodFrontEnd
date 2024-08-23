@@ -13,7 +13,7 @@ const PromoCard = ({ type }) => {
   const [promo, setPromo] = useState([]);
   const location = useLocation();
 
-  console.log(promo);
+  console.log(data);
 
   useEffect(() => {
     axios
@@ -24,7 +24,8 @@ const PromoCard = ({ type }) => {
               location.pathname.split("/")[2]
             }`
       )
-      .then(({ data }) => {
+      .then(({ data}) => {
+        console.log(data);
         if (type == "all") {
           setPromo(data || []);
           setCategoryName("Eng so'nggi promokodlar");
