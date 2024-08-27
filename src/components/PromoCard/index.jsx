@@ -97,9 +97,9 @@ const PromoCard = ({ type }) => {
 
           <p>
             Mahsulotlarni sotib olishda maxsus promokoddan foydalaning va{" "}
-            {selected.discountPrice} 
+            {selected.discountPrice}{" "}
             so'mlik chegirmaga ega bo'ling! Taklif faqat birinchi buyurtmaga{" "}
-            {selected.startPrice} 
+            {selected.startPrice}{" "} 
             so‘mdan yuqori bo'lgan xaridlar uchun amal qiladi.
           </p>
         </div>
