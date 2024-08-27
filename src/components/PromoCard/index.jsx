@@ -18,8 +18,8 @@ const PromoCard = ({ type }) => {
     axios
       .get(
         type == "all"
-          ? `https://promokodapibackend.fly.dev/api/v1/promo/getAllPromo`
-          : `https://promokodapibackend.fly.dev/api/v1/promo/category/${
+          ? `https://promokodapi-production.up.railway.app/api/v1/promo/getAllPromo`
+          : `https://promokodapi-production.up.railway.app/api/v1/promo/category/${
               location.pathname.split("/")[2]
             }`
       )
